@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/questionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Bu bir aslan mı?"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/questionIV"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/questionTV"
+        android:layout_marginHorizontal="40dp"
+        android:src="@drawable/leon_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:text="Hayır"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF9800"
+            android:text="Evet"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
